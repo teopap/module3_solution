@@ -1,0 +1,64 @@
+#header-nav {
+    background-color: #7F5300;
+}
+
+#chicken-link:hover, #beef-link:hover, #sushi-link:hover {
+    background-color: #555;
+    
+}
+
+.navbar-default .navbar-brand {
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#main-content {
+    background-color: #89FAF9;
+}
+
+.section {
+    padding: 1%;
+    width: 100%
+    margin-bottom:15px;
+}
+
+
+#headerText {
+    font-size: 1.75em;
+    padding: 30px 0;
+    font-weight: bold;
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+.sectionTitle {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    font-size: 1.5em;
+    position: relative;
+    padding: 15px;
+}
+
+.sectionText {
+    padding: 0 15px 15px;
+}
+
+
+.chickenTitle {
+    background-color: #d65c5c;
+
+}
+
+.beefTitle {
+    background-color: #72CB28;
+}
+
+.sushiTitle {
+    background-color: #d6995c;
+}
+
+#header{
+    padding: 0 15px;
+}
