@@ -1,63 +1,102 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Module3_solution</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Food, LLC</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<!--These font lines are taken out of google fonts page -->
+	<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <div class="container">
-        <header id="header">
-            <nav class="navbar navbar-default" id="header-nav">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">Food, LLC</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav visible-xs">
-                            <li id="chicken-link" class="text-center"><a href="#">Chicken <span class="sr-only">(current)</span></a></li>
-                            <li id="beef-link" class="text-center"><a href="#">Beef</a></li>
-                            <li id="sushi-link" class="text-center"><a href="#" >Sushi</a></li>
-                        </ul>
 
+
+    <!-- header -->
+    <header>
+        <nav id="header-nav" class="navbar navbar-default"> <!-- bootstrap classes -->
+            <div class="container"> <!--container constrains the width to the middle -->
+            <!-- it's a trick: navbar controls the color and container controls the position on the screen -->
+            <!-- container-fuild streches the site to the full extent -->
+                <div class="navbar-header">
+                <!-- Bootstrap recommedation. Wrapper for the logo -->
+                    
+                    <!-- Name of the restaurant -->
+                    <div class="navbar-brand"> <!-- bootstrap class -->
+                        <a href="index.html">
+                            <h1>Food, LLC</h1> <!--The most important thing of the page -->
+                        </a>
                     </div>
+
+
+                    <!-- Button that collapses the menu -->
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                        <!-- navbar-toggle: positioning of the button -->
+                        <!--collapsed: when sb click it goes away. There is a plugin in JS file of bootstrap.-->
+                        <!-- data target: what opens if clicked -->
+                        <!-- span are for screen readers -->
+                        <!-- icon bars are the lines inside the button -->
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                 </div>
-            </nav>
-            <div id="headerText" class="text-center">Our Menu</div>
-        </header>
-        <section id="main-content">
-            <div id="container">
-                <div id="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="section">
-                            <div class="sectionTitle chickenTitle">Chicken</div>
-                            <div class="sectionText chickenTitle">Lorem ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-                        </div>
-                        <div class="section">
-                            <div class="sectionTitle beefTitle">Beef</div>
-                            <div class="sectionText beefTitle">Lorem ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-                        </div>
-                        <div class="section">
-                            <div class="sectionTitle sushiTitle">Sushi</div>
-                            <div class="sectionText sushiTitle">Lorem ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-                        </div>
-                    </div>
-                </div>
+
+                <!-- code for the menu when it is collapsed -->
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right">
+                        <li class="visible-xs active">
+                            <a href="index.html">Chicken</a>
+                        </li>
+                        <li class="visible-xs active">
+                            <a href="index.html">Beef</a>
+                        </li>
+                        <li class="visible-xs active">
+                            <a href="index.html">Sushi</a>
+                        </li>
+                    </ul><!-- #nav-list -->
+                </div><!-- .collapse .navbar-collapse -->
             </div>
-        </section>
+        </nav>
+    </header>
+
+
+
+    
+
+    <div id="main-content" class="container">
+        <div class="row">
+            <h2 class="text-center">Our Menu</h2>
+        </div>
+        <hr/>
+        <div class="row">
+            <section class="col-md-4 col-sm-6 col-xs-12">
+                <div class="menu-item">
+                    <p class="item-header chicken">Chicken</p>
+                    <p class="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  </p>
+                </div>
+            </section>
+            <section class="col-md-4 col-sm-6 col-xs-12">
+                <div class="menu-item">
+                    <p class="item-header beef">Beef</p>
+                    <p class="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                </div>
+            </section>
+            <section class="col-md-4 col-sm-12 col-xs-12">
+                <div class="menu-item">
+                    <p class="item-header sushi">Sushi</p>
+                    <p class="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  </p>
+                </div>
+            </section>
+        </div>
     </div>
-    <script src="bootstrap.js"></script>
-    <script src="bootstrap.min.js"></script> 
-    <script src="jquery.3.1.1.min.js"></script>
-    </body>
+
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
 </html>
