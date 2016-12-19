@@ -1,0 +1,125 @@
+body{
+    font-size: 16px;
+    color: #fff; /*white*/
+    background-color: #514d44;
+    font-family: 'Oxygen', sans-serif;
+}
+
+
+/* HEADER */
+
+#header-nav {
+    background-color: #f6b319;
+    border-radius: 0;
+    border: 0;
+}
+
+
+.navbar-brand {
+    padding-top:25px;
+}
+
+.navbar-brand h1 {
+    font-family: 'Lora', serif;
+    color: #557c3e;
+    font-size: 1.5em;
+    text-transform: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none; /* not look like a link */
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+
+}
+
+
+
+/* CONTENT */
+
+
+section {
+    padding: 2%;
+    width: 98%
+}
+
+.h2 {
+    margin-bottom:100px;
+
+
+}
+
+.menu-item{
+    position:relative;
+    background-color: green;
+    width: auto;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.item-header{
+    position: absolute;
+    right: 0px;
+    top: -15px;
+
+    border: 1px solid black;
+    background-color: green;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: Helvetica;
+    color: white;
+    padding:10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.chicken{
+    background-color: red;
+    color:black;
+}
+
+.sushi{
+    background-color: cyan;
+    color:black;
+}
+.beef{
+    background-color: yellow;
+    color:black;
+}
+
+.item-text{
+    position:relative;
+    top:35px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: Helvetica;
+    color: white;
+    padding:10px;
+    padding-bottom: 35px;       
+}
